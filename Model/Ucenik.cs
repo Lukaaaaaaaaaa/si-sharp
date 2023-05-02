@@ -1,3 +1,5 @@
-﻿public class Ucenik
-{
-}
+﻿
+    public class Ucenik
+    {
+    }
+
