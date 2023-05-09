@@ -47,7 +47,6 @@ namespace Knjiznica.Model
                         u.Adresa = polja[3];
                         u.Telefon = polja[4];
                         u.Razred = int.Parse(polja[5]);
-
                         ucenici.Add(u);
                     }
                 }
@@ -117,7 +116,7 @@ namespace Knjiznica.Model
         {
             using (StreamWriter sw = new StreamWriter(datUcenici))
             {
-                foreach (Ucenik u in this.Ucenici)
+                foreach (Ucenik u in Ucenici)
                 {
                     sw.WriteLine("0}|{1}|{2}|{3}|{4}|{5}", u.OIB, u.Ime, u.Prezime,u.Adresa, u.Telefon, u.Razred);
                 }
